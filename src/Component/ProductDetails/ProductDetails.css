@@ -1,0 +1,41 @@
+.form-control:focus {
+  border-color: lightgray !important;
+
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px lightgray !important;
+}
+label {
+  color: #6f6a69;
+  width: 30%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.form-control {
+  border: none !important;
+  color: #6f6a69 !important;
+}
+input[type="radio"]:checked::after {
+  background-color: black;
+}
+.dropBox {
+  border: 1px dashed black;
+}
+.browseFileBtn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 567px) {
+  .radioButtons {
+    display: block !important;
+    text-align: left;
+  }
+  .material {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .material {
+    margin-bottom: 10px;
+  }
+}
