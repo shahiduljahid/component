@@ -3,8 +3,12 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
-import ProductDetails from "./Component/ProductDetails/ProductDetails";
+// import ProductDetails from "./Component/ProductDetails/ProductDetails";
 import productImg from "./photos/4Asset 5sij.png"
+import garmentImg from "./photos/garment.jpg"
+import industryImg from "./photos/china.gif"
+import Suplier from "./Component/Supplier/Suplier";
+import Certificate from "./photos/certificate.jpg"
 
 function App() {
   const productDetails = {
@@ -23,6 +27,21 @@ function App() {
 
 
   };
+  const supliers =[{
+    img:garmentImg,
+    title:'Alec Garments limited',
+    location:'Dhaka,Bangladesh',
+    fullAddress:'Kachpur,Narayangonj,Dhaka,Bangladesh',
+    certificateImg:''
+  },
+{
+  img:industryImg,
+    title:'xianshui Talent knitting Garment Co. limited',
+    location:'shandong,china',
+    fullAddress:'yantai,Laishan,shandong,china',
+    certificateImg:Certificate
+
+}]
 
   return (
     <div>
@@ -30,7 +49,7 @@ function App() {
         <Switch>
           
           <Route path="/">
-            <ProductDetails product={productDetails}></ProductDetails>
+           <Suplier suplier={supliers}></Suplier>
           </Route>
         </Switch>
       </Router>
