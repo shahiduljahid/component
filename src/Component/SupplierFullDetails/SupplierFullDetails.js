@@ -12,7 +12,7 @@ import picture4 from "../../photos/4.jpg";
 import picture5 from "../../photos/5.jpg";
 import { Typography } from "@material-ui/core";
 import { grey } from "@material-ui/core/colors";
-import Lists from "../../Lists/Lists";
+import Lists from "../Lists/Lists";
 
 const theme = createTheme({
   spacing: [0, 4, 8, 16, 32, 64],
