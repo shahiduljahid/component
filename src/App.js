@@ -9,6 +9,7 @@ import garmentImg from "./photos/garment.jpg"
 import industryImg from "./photos/china.gif"
 import Suplier from "./Component/Supplier/Suplier";
 import Certificate from "./photos/certificate.jpg"
+import TechPack from "./Component/TechPack/TechPack";
 
 function App() {
   const productDetails = {
@@ -49,7 +50,8 @@ function App() {
         <Switch>
           
           <Route path="/">
-           <Suplier suplier={supliers}></Suplier>
+           {/* <Suplier suplier={supliers}></Suplier> */}
+           <TechPack></TechPack>
           </Route>
         </Switch>
       </Router>
