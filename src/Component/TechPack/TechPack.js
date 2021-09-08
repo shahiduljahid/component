@@ -883,7 +883,7 @@ const TechPack = () => {
             <Grid
               style={{ marginTop: "200px", marginLeft: "auto" }}
               item
-              xs={3}
+              xs={12} md={3}
             >
               <Button
                 style={{ marginRight: "20px", backgroundColor: "#f50057d1" }}

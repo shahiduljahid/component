@@ -62,15 +62,15 @@ const AddMetarialForm = ({ image }) => {
       >
         <TextField
           required
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px",padding:'15px 0' }}
           {...register("metarialName")}
-          label="Metarial Name*"
+          label="Metarial Name"
         />
         <TextField
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px",padding:'15px 0'  }}
           id="standard-select-currency"
           select
-          label="Metarial Type*"
+          label="Metarial Type"
           value={materialType}
           onChange={handleChange}
           required
@@ -82,13 +82,13 @@ const AddMetarialForm = ({ image }) => {
           ))}
         </TextField>
         <TextField
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px" ,padding:'15px 0' }}
           {...register("composition")}
           label="Composition"
         />
         <Input
           {...register("weight")}
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px" ,padding:'15px 0' }}
           id="standard-adornment-weight"
           placeholder="weight"
           endAdornment={<InputAdornment position="end">gsm</InputAdornment>}
@@ -96,7 +96,7 @@ const AddMetarialForm = ({ image }) => {
         />
         <TextField
           {...register("description")}
-          style={{ marginBottom: "40px" }}
+          style={{ marginBottom: "40px" ,padding:'15px 0' }}
           {...register("description")}
           label="Description"
         />

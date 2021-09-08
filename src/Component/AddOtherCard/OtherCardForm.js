@@ -36,6 +36,7 @@ const OtherCardForm = ({image}) => {
           style={{ marginBottom: "20px" }}
           {...register("name")}
           label="Name"
+          required
         />
         
        <TextField

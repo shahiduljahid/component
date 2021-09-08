@@ -46,25 +46,26 @@ const ComponentForm = ({image}) => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <TextField
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px" ,padding:'15px 0' }}
           {...register("componentName")}
           label="Component Name"
+          required
         />
         
         <TextField
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px" ,padding:'15px 0' }}
           {...register("composition")}
           label="Composition"
         />
         <TextField
-          style={{ marginBottom: "20px" }}
+          style={{ marginBottom: "20px" ,padding:'15px 0' }}
           {...register("diementionNotes")}
           label="Diemention Notes"
         />
        
         <TextField
           {...register("description")}
-          style={{ marginBottom: "40px" }}
+          style={{ marginBottom: "40px" ,padding:'15px 0' }}
           {...register("description")}
           label="Description"
         />
