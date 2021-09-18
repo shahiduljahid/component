@@ -181,7 +181,9 @@ const TechPack = () => {
 
     setYourDesign(design);
    
+   
   };
+  console.log(yourDesign)
   
   return (
     <div style={{ marginTop: "50px" }}>

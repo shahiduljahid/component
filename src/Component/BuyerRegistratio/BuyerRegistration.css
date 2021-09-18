@@ -1,0 +1,94 @@
+.bannerContainer {
+  background-image: url(../../photos/bg.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.bannerContainer::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #000000b3;
+}
+.content {
+  position: relative;
+}
+.stepContent {
+  position: relative;
+  width: 50%;
+}
+.inputContent {
+  position: relative;
+  width: 50%;
+}
+.otherTextFld label {
+  color: white !important;
+}
+.otherTextFld input {
+  color: white !important;
+  background-color: #80808000;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.otherTextFld input:focus {
+  border: 1px solid white;
+  outline: none !important;
+  background-color: grey !important;
+}
+.inputTextFld input:focus  {
+  outline: none !important;
+  border-color: #ffffff00;
+  border-bottom: 1px solid white;
+}
+.inputTextFld input{
+  color: white !important;
+  width:100%;
+  background-color: #80808000;
+  outline: none;
+  border-color: #ffffff00;
+  border-bottom: 1px solid white;
+}
+.inputTextFld select {
+  color: white !important;
+  width:100%;
+  background-color: #80808000;
+  outline: none;
+  border-color: #ffffff00;
+  border-bottom: 1px solid white;
+
+}
+.inputTextFld option {
+ color:white;
+  width:100%;
+  background-color:grey;
+  outline: none;
+  border-color: #ffffff00;
+  border-bottom: 1px solid white;
+
+}
+
+@media (max-width: 767px) {
+  .introPicture {
+    display: none;
+  }
+  .stepContent {
+    width: 100%;
+  }
+}
+
+.optionBtn {
+  margin-bottom: 10px;
+  color: white !important;
+  border: 1px solid !important;
+  background-color: #80808036 !important;
+  padding: 10px !important;
+}
+.optionBtn:focus {
+  background-color: grey !important;
+}

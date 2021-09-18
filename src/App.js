@@ -13,6 +13,7 @@ import Addmetarial from "./Component/Addmetarial/Addmetarial";
 import AddComponent from "./Component/AddComponent/AddComponent";
 import AddOtherCard from "./Component/AddOtherCard/AddOtherCard";
 import dress from "./photos/dress.jpg";
+import BuyerRegistration from "./Component/BuyerRegistratio/BuyerRegistration";
 export const MetarialContext = createContext();
 export const ComponentContext = createContext();
 export const OtherCardContext = createContext();
@@ -70,7 +71,8 @@ function App() {
 
                 <Route path="/">
                   {/* <Suplier suplier={supliers}></Suplier> */}
-                  <TechPack></TechPack>
+                  {/* <TechPack></TechPack> */}
+                  <BuyerRegistration></BuyerRegistration>
                 </Route>
               </Switch>
             </Router>
